@@ -2,8 +2,7 @@ import { NavLink, useLocation } from 'react-router-dom'
 import { HeaderContainer } from './styles'
 import { useEffect } from 'react'
 import logoImg from '../../assets/logo.svg'
-import timerImg from '../../assets/timer.svg'
-import historyImg from '../../assets/history.svg'
+import { Queue, Timer } from 'phosphor-react'
 
 export function Header() {
   const { pathname } = useLocation()
@@ -18,10 +17,10 @@ export function Header() {
 
       <nav>
         <NavLink to="/" title="Timer">
-          <img src={timerImg} alt="timer" />
+          <Timer size={24} />
         </NavLink>
         <NavLink to="/history" title="Histórico">
-          <img src={historyImg} alt="pomodoro history" />
+          <Queue size={24} />
         </NavLink>
       </nav>
     </HeaderContainer>
