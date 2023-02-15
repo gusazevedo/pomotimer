@@ -17,10 +17,10 @@ export function Header() {
 
       <nav>
         <NavLink to="/" title="Timer">
-          <Timer size={24} />
+          <Timer size={24} weight="bold" />
         </NavLink>
         <NavLink to="/history" title="Histórico">
-          <Queue size={24} />
+          <Queue size={24} weight="bold" />
         </NavLink>
       </nav>
     </HeaderContainer>

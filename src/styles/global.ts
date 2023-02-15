@@ -8,10 +8,10 @@ export const GlobalStyle = createGlobalStyle`
     outline: none;
   }
 
-  :focus {
+  /* :focus {
     outline: none;
     box-shadow: 0 0 0 2px ${(props) => props.theme['green-500']};
-  }
+  } */
 
   body {
     background-color: ${(props) => props.theme['gray-900']};
